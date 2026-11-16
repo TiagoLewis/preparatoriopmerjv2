@@ -7,21 +7,22 @@
 <meta name="description" content="Último concurso da PMERJ com nível médio, sem limite de idade e R$ 7.644,60. Prepare-se no padrão FGV estudando 2 horas por dia com o Prof. Ismael Souto.">
 <meta name="theme-color" content="#061230">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://preparatoriopmerj.institutosouto.com.br/">
+<meta property="og:url" content="https://preparatoriopmerjv2.institutosouto.com.br/">
 <meta property="og:site_name" content="Instituto Souto">
 <meta property="og:title" content="Preparatório PMERJ | Prof. Ismael Souto">
 <meta property="og:description" content="Sem limite de idade · Último concurso com nível médio · Até 16 mil policiais. Prepare-se no padrão FGV estudando 2 horas por dia.">
-<meta property="og:image" content="https://preparatoriopmerj.institutosouto.com.br/img/og-pmerj.jpg">
+<meta property="og:image" content="https://preparatoriopmerjv2.institutosouto.com.br/img/og-pmerj.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="pt_BR">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Preparatório PMERJ | Prof. Ismael Souto">
 <meta name="twitter:description" content="Sem limite de idade · Último concurso com nível médio · Até 16 mil policiais.">
-<meta name="twitter:image" content="https://preparatoriopmerj.institutosouto.com.br/img/og-pmerj.jpg">
+<meta name="twitter:image" content="https://preparatoriopmerjv2.institutosouto.com.br/img/og-pmerj.jpg">
 <link rel="preconnect" href="https://angradosreis.institutosouto.com.br">
 <link rel="preconnect" href="https://institutosouto.com.br">
 <link rel="dns-prefetch" href="https://connect.facebook.net">
+<link rel="preconnect" href="https://data.hub.la">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@700&display=optional" rel="stylesheet">
@@ -1358,9 +1359,6 @@ $$('.js-wa').forEach(a=>a.addEventListener('click',()=>px('Contact')));
 /* economiza CPU/bateria com a aba em segundo plano */
 document.addEventListener("visibilitychange",()=>{ document.body.classList.toggle("paused",document.hidden); if(document.hidden) $$("video").forEach(v=>v.pause()); });
 
-/* repassa UTMs/parâmetros da URL para o checkout da Hubla */
-if(location.search){ $$('a[href*="hub.la"],a[href*="pay.hubla.app"]').forEach(a=>{ a.href += (a.href.includes("?")?"&":"?") + location.search.slice(1); }); }
-
 /* toasts */
 const tbox=$("#toasts"); let ti=0;
 const showToast=()=>{
@@ -1372,5 +1370,8 @@ const showToast=()=>{
 };
 setTimeout(()=>{showToast();setInterval(showToast,9000)},4000);
 </script>
+
+<!-- Hubla: rastreamento de UTMs (tag da conta, a mesma para todas as páginas) -->
+<script src="https://data.hub.la/hub.min.js?wk=wk_ge7WD9tOLUSjFyTnQ2jzczczeEO2"></script>
 </body>
 </html>
